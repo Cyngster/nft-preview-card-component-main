@@ -1,0 +1,162 @@
+@import 'colors';
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Outfit', sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background-color: $main-BG;
+}
+
+main {
+	margin: auto 0;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: $card-BG;
+	max-width: 20rem;
+	padding: 1.5rem;
+	border-radius: 1rem;
+	box-shadow: 0 1rem 1rem hsl(217, 54%, 8%);
+
+	hr {
+		width: 100%;
+		border-top: 1px;
+		border-color: $line;
+	}
+
+	.main-img {
+		border-radius: 0.5rem;
+		max-height: 100%;
+		height: 272px;
+		width: 272px;
+		max-width: 100%;
+		cursor: pointer;
+		background-image: url('../images/image-equilibrium.jpg');
+		background-size: contain;
+
+		.main-img-shadow {
+			width: 100%;
+			height: 100%;
+			border-radius: 0.5rem;
+			background-color: $Cyan-shadow;
+			display: none;
+		}
+		.img-card {
+			max-width: 100%;
+			border-radius: 0.5rem;
+		}
+	}
+
+	.main-img:hover {
+		.main-img-shadow {
+			display: flex;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			max-height: 100%;
+		}
+	}
+}
+
+h1 {
+	margin-right: auto;
+	color: $White;
+	font-weight: 400;
+	font-size: 1.5rem;
+	margin-top: 1rem;
+	transition: color 0.2s ease-in;
+	cursor: pointer;
+}
+
+h1:hover {
+	color: $Cyan;
+}
+
+p {
+	margin-top: 1rem;
+	color: $Soft-blue;
+	font-weight: 300;
+}
+
+.card-numbers {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+
+	.crypto-img {
+		margin-right: 0.425rem;
+	}
+
+	.avatar {
+		vertical-align: middle;
+		margin-right: 5px;
+	}
+
+	.time-img {
+		margin-right: 0.425rem;
+	}
+
+	.crypto {
+		color: cyan;
+		font-weight: 400;
+		display: flex;
+		align-items: center;
+	}
+
+	.time {
+		color: $Soft-blue;
+		font-weight: 400;
+		display: flex;
+		align-items: center;
+	}
+}
+
+.card-footer {
+	display: flex;
+	align-items: center;
+	img {
+		vertical-align: middle;
+		max-width: 12%;
+		border-radius: 50%;
+		border: 1px solid $White;
+		margin-right: 1rem;
+	}
+	p {
+		margin-top: 1rem;
+	}
+
+	.name {
+		color: $White;
+		transition: color 0.2s ease-in;
+		cursor: pointer;
+	}
+
+	.name:hover {
+		color: $Cyan;
+	}
+}
+
+.attribution {
+	color: $White;
+
+	font-size: 11px;
+	text-align: center;
+	a {
+		color: hsl(228, 45%, 44%);
+	}
+}
